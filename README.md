@@ -3,18 +3,18 @@
 Test git hook and add depency analysis
 
 # Tutorial
-
+  
 Install user local hooks
-$> init.sh
-
+$> init.sh  
+  
 Try dependency hook 
  by modifying a file in the repository
  then try to commit to see the pre commit 
   script kick in.
-
-$> nano logical/shared/shared.txt
-$> git commit
-
+  
+$> nano logical/shared/shared.txt  
+$> git commit  
+  
 The command report a dependency changes 
   that break the commit.
 
