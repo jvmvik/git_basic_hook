@@ -1,0 +1,6 @@
+#!/bin/sh
+# Check which file must be recompile 
+#  for linting purposes...
+
+#echo $PWD
+exec ruby logical/dependency.rb

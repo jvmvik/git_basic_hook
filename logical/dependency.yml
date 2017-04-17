@@ -1,0 +1,20 @@
+# Model dependency between files in the repository.
+{
+ parent: 'logical/',      # parent directory
+ graph: [                 # describe dependency per directory
+ {
+  path: 'testbench/top',
+  dependency: [
+   'testbench/shared',
+   'top',
+   'shared'
+  ]
+ },
+ {
+  path: 'top',
+  dependency: [
+  'shared'
+  ]
+ }
+ ]
+}

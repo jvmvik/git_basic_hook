@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+#
+# Install git hooks
+require 'FileUtils'
+
+print " - Install pre-commit..."
+
+root = __dir__ + '/../.git/hooks'
+FileUtils.cp(__dir__ + '/pre-commit', root)
+
+puts "done"
